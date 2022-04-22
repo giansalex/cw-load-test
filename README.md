@@ -45,12 +45,12 @@ and sends 6 wasm codes with a timeout height (+5).
 
 **2. Execute contract**
 
-Send 10 `MsgExecuteContract` txs with timeout height +5. 
+Send 10 `MsgExecuteContract` txs with timeout height +5. Use [custom contract](./contract/)
 
 ```bash
 ./build/cw-load-test -b 5 -r 10 \
     --contract wasm1hm4y6fzgxgu688jgf7ek66px6xkrtmn3gyk8fax3eawhp68c2d5qphe2pl
-    --exec-msg '{"cpu_loop": {"limit": 1000}}' \
+    --exec-msg '{"allocate_memory": {"limit": 500}}' \
     --broadcast-tx-method async \
     --lcd http://127.0.0.1:1317 \
     --endpoints ws://127.0.0.1:26657/websocket \
