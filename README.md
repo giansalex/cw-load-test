@@ -50,7 +50,7 @@ Send 10 `MsgExecuteContract` txs with timeout height +5.
 ```bash
 ./build/cw-load-test -b 5 -r 10 \
     --contract wasm1hm4y6fzgxgu688jgf7ek66px6xkrtmn3gyk8fax3eawhp68c2d5qphe2pl
-    --exec-msg '{"loop": {}}' \
+    --exec-msg '{"cpu_loop": {"limit": 1000}}' \
     --broadcast-tx-method async \
     --lcd http://127.0.0.1:1317 \
     --endpoints ws://127.0.0.1:26657/websocket \
