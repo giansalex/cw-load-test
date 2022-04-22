@@ -86,7 +86,7 @@ func (f *MyABCIAppClientFactory) NewClient(cfg Config) (Client, error) {
 		return nil, err
 	}
 	address := info.GetAddress().String()
-	logger := logging.NewLogrusLogger("cro-client")
+	logger := logging.NewLogrusLogger("cw-client")
 
 	logger.Info("Wallet Address: " + address)
 

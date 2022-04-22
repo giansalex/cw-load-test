@@ -4,7 +4,6 @@
 *.dll
 *.so
 *.dylib
-/tm-load-test
 
 # Test binary, built with `go test -c`
 *.test
@@ -17,13 +16,11 @@
 
 /.vscode/
 /build/
-/scripts/load-testing/venv/
 *.pyc
 __pycache__
 *.bak
 *.retry
 .idea
-.terragrunt-cache
 /*.log
 venv/
 /deployment/hosts
