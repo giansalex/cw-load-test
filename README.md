@@ -42,6 +42,8 @@ and sends 6 wasm codes with a timeout height (+5).
 
 - `-b`: Max block to wait txs complete
 - `-r`: Txs in batch transaction
+- `--lcd`: Cosmos API
+- `--endpoints`: Tendermint RPC
 
 **2. Execute contract**
 
