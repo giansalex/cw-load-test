@@ -153,7 +153,7 @@ func (c *MyABCIAppClient) createExecuteMsg(address string) cosmostypes.Msg {
 	wasmMsg := &wasmtypes.MsgExecuteContract{
 		Sender:   address,
 		Contract: c.contract,
-		Msg:      []byte(c.execMsg), // {"argon2":{"mem_cost":1000,"time_cost":10}}
+		Msg:      []byte(c.execMsg),
 		Funds:    cosmostypes.Coins{},
 	}
 
